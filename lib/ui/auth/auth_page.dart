@@ -43,15 +43,8 @@ class _AuthPageState extends State<AuthPage> {
 
   Future<void> _signIn() async {
     final vm = context.read(authViewModelProvider);
-    final user = await vm.signIn(
+    await vm.signIn(
         email: _emailController.text, password: _passwordController.text);
-    if (user?.emailVerified == false) {
-      await vm.signOut();
-      showSuccessSnackBar(
-          context: context, message: 'Confirm your email address');
-    } else if (user != null) {
-      showSuccessSnackBar(context: context, message: 'Signed in');
-    }
   }
 
   Future<User?> _submit() async {

@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:catcher/catcher.dart';
 import 'package:daily_page/data/provider/firebase_auth/firebase_auth_provider.dart';
 import 'package:daily_page/data/service/activity_tracker.dart';
 import 'package:daily_page/ui/auth/auth_page.dart';
@@ -27,7 +26,6 @@ class App extends HookWidget {
     }
 
     return MaterialApp(
-        navigatorKey: Catcher.navigatorKey,
         theme: theme.data,
         darkTheme: AppTheme.dark().data,
         themeMode: themeMode,

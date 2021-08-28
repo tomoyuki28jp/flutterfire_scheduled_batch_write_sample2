@@ -344,23 +344,16 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
-  - catcher (0.0.1):
-    - FlutterMacOS
   - cloud_firestore (2.5.1):
     - Firebase/CoreOnly (~> 8.6.0)
     - Firebase/Firestore (~> 8.6.0)
     - firebase_core
-    - FlutterMacOS
-  - device_info_plus_macos (0.0.1):
     - FlutterMacOS
   - Firebase/Auth (8.6.1):
     - Firebase/CoreOnly
     - FirebaseAuth (~> 8.6.0)
   - Firebase/CoreOnly (8.6.1):
     - FirebaseCore (= 8.6.1)
-  - Firebase/Crashlytics (8.6.1):
-    - Firebase/CoreOnly
-    - FirebaseCrashlytics (~> 8.6.0)
   - Firebase/Firestore (8.6.1):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 8.6.0)
@@ -371,11 +364,6 @@ PODS:
     - FlutterMacOS
   - firebase_core (1.6.0):
     - Firebase/CoreOnly (~> 8.6.0)
-    - FlutterMacOS
-  - firebase_crashlytics (2.2.0):
-    - Firebase/CoreOnly (~> 8.6.0)
-    - Firebase/Crashlytics (~> 8.6.0)
-    - firebase_core
     - FlutterMacOS
   - FirebaseAuth (8.6.0):
     - FirebaseCore (~> 8.0)
@@ -391,13 +379,6 @@ PODS:
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
     - nanopb (~> 2.30908.0)
-  - FirebaseCrashlytics (8.6.0):
-    - FirebaseCore (~> 8.0)
-    - FirebaseInstallations (~> 8.0)
-    - GoogleDataTransport (~> 9.0)
-    - GoogleUtilities/Environment (~> 7.4)
-    - nanopb (~> 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
   - FirebaseFirestore (8.6.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
@@ -411,11 +392,6 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30908.0)
-  - FirebaseInstallations (8.6.0):
-    - FirebaseCore (~> 8.0)
-    - GoogleUtilities/Environment (~> 7.4)
-    - GoogleUtilities/UserDefaults (~> 7.4)
-    - PromisesObjC (< 3.0, >= 1.2)
   - FlutterMacOS (1.0.0)
   - GoogleDataTransport (9.1.0):
     - GoogleUtilities/Environment (~> 7.2)
@@ -435,8 +411,6 @@ PODS:
     - GoogleUtilities/Reachability
   - "GoogleUtilities/NSData+zlib (7.5.1)"
   - GoogleUtilities/Reachability (7.5.1):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (7.5.1):
     - GoogleUtilities/Logger
   - "gRPC-C++ (1.28.2)":
     - "gRPC-C++/Implementation (= 1.28.2)"
@@ -478,12 +452,9 @@ PODS:
     - FlutterMacOS
 
 DEPENDENCIES:
-  - catcher (from `Flutter/ephemeral/.symlinks/plugins/catcher/macos`)
   - cloud_firestore (from `Flutter/ephemeral/.symlinks/plugins/cloud_firestore/macos`)
-  - device_info_plus_macos (from `Flutter/ephemeral/.symlinks/plugins/device_info_plus_macos/macos`)
   - firebase_auth (from `Flutter/ephemeral/.symlinks/plugins/firebase_auth/macos`)
   - firebase_core (from `Flutter/ephemeral/.symlinks/plugins/firebase_core/macos`)
-  - firebase_crashlytics (from `Flutter/ephemeral/.symlinks/plugins/firebase_crashlytics/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
   - package_info_plus_macos (from `Flutter/ephemeral/.symlinks/plugins/package_info_plus_macos/macos`)
   - path_provider_macos (from `Flutter/ephemeral/.symlinks/plugins/path_provider_macos/macos`)
@@ -497,9 +468,7 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseCore
     - FirebaseCoreDiagnostics
-    - FirebaseCrashlytics
     - FirebaseFirestore
-    - FirebaseInstallations
     - GoogleDataTransport
     - GoogleUtilities
     - "gRPC-C++"
@@ -510,18 +479,12 @@ SPEC REPOS:
     - PromisesObjC
 
 EXTERNAL SOURCES:
-  catcher:
-    :path: Flutter/ephemeral/.symlinks/plugins/catcher/macos
   cloud_firestore:
     :path: Flutter/ephemeral/.symlinks/plugins/cloud_firestore/macos
-  device_info_plus_macos:
-    :path: Flutter/ephemeral/.symlinks/plugins/device_info_plus_macos/macos
   firebase_auth:
     :path: Flutter/ephemeral/.symlinks/plugins/firebase_auth/macos
   firebase_core:
     :path: Flutter/ephemeral/.symlinks/plugins/firebase_core/macos
-  firebase_crashlytics:
-    :path: Flutter/ephemeral/.symlinks/plugins/firebase_crashlytics/macos
   FlutterMacOS:
     :path: Flutter/ephemeral
   package_info_plus_macos:
@@ -534,19 +497,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
-  catcher: dc8ecb9a4d3e6e36bd403cd34e13673f7ed7ca70
   cloud_firestore: f5d16c894cbd48033a3990e403d7e1a23baf9b30
-  device_info_plus_macos: 1ad388a1ef433505c4038e7dd9605aadd1e2e9c7
   Firebase: e84d95f6d3a91f634abc384f0751c434cb3aecfa
   firebase_auth: 944eea63ff2f184703c1fafb5a6461362ac3857a
   firebase_core: 9a84b9f2d3a597a3ddc716942bc7e47d6eb85649
-  firebase_crashlytics: e00319c2895d0ff89bab33f0a09613aebe4c818a
   FirebaseAuth: 223adeeb2262b417532e89bf06a960e3a0a1e9e4
   FirebaseCore: a753c231801f04f5ccd10cc92119ad1b12a61165
   FirebaseCoreDiagnostics: 3721920bde3a9a6d5aa093c1d25e9d3e47f694af
-  FirebaseCrashlytics: 58f8ecea7c799c61c50e8111d2e438424a8a1d2e
   FirebaseFirestore: 7b8bd72aff4d3ad91498343e81fdbaa994ce8abe
-  FirebaseInstallations: 0ede6ffcd215b8f93c19d9b06c1c54e2d4107e98
   FlutterMacOS: 57701585bf7de1b3fc2bb61f6378d73bbdea8424
   GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
